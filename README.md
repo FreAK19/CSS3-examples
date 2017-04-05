@@ -5,4 +5,4 @@ Simple examples CSS use today
 ************
 Everything that you need to do its clone this repository.
 
-![example-photo]()
+![example-photo](photo.png)
