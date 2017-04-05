@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 3</title>
+	<style>
+	.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	height: 500px;
+	background: #2d2d2d;
+	box-shadow: 3px -3px 48px #2d2d2d;
+}
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes equalize {
+	0% {
+		transform: translateY(0);
+	}
+	10% {
+		transform: translateY(70px);
+	}
+	20% {
+		transform: translateY(20px);
+	}
+	30% {
+		transform: translateY(70px);
+	}
+	40% {
+		transform: translateY(40px);
+	}
+	50% {
+		transform: translateY(70px);
+	}
+	60% {
+		transform: translateY(30px);
+	}
+	80% {
+		transform: translateY(60px);
+	}
+	70% {
+		transform: translateY(10px);
+	}
+	90% {
+		transform: translateY(50px);
+	}
+}
+.main {
+	display: flex;
+  overflow: hidden;
+  height: 100px;
+}
+.section {
+	width: 20px;
+	height: 100px;
+	margin: 5px;
+	background: #ff1493;
+	animation: equalize 3s 0s infinite, opacity 3s 0s 1;
+}
+.one {
+	animation-delay: -.5s;
+}
+.two {
+	animation-delay: -.8s;
+}
+.three {
+	animation-delay: -.3s;
+}
+.four {
+	animation-delay: -.2s;
+}
+.five {
+	animation-delay: -.1s;
+}
+.six {
+	animation-delay: -.7s;
+}
+
+	</style>/
+</head>
+<body>
+	<div class="container">
+		<div class="block">
+		<div class="main">
+			<div class="section one"></div>
+			<div class="section two"></div>
+			<div class="section three"></div>
+			<div class="section four"></div>
+			<div class="section five"></div>
+			<div class="section six"></div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
