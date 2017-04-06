@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.main {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+	width: 600px;
+	margin: 0 auto;
+
+}
+
+.block {
+	font-family: 'Roboto', sans-serif;
+	height: 300px;
+	background: #e27474;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.6em;
+	flex-basis: 300px;
+	transition: .5s;
+}
+.block:hover {
+	color: black;
+	cursor: pointer;
+	text-decoration: underline;
+	box-shadow: inset 8px 8px 20px #000, inset -8px -8px 20px #000;
+}
+.block:nth-child(1):hover {
+	transform: translateY(10px);
+}
+.block:nth-child(2):hover {
+	transform: translateY(10px);
+}
+.block:nth-child(3):hover {
+	transform: translateY(-10px);
+}
+.block:nth-child(4):hover {
+	transform: translateY(-10px);
+}
