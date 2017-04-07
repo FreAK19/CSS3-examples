@@ -1,0 +1,53 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Animation */
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+	background: #2d2d2d;
+	box-shadow: 5px 5px 10px #000;
+}
+
+.block__inside {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 150px;
+	background: #FF0000;
+	transition: 1s ease-in-out;
+	box-shadow: 4px 5px 10px #000;
+}
+.block__inside:hover {
+	width: 300px;
+	background: #FFA500;
+}
+.rect {
+	color: #fff;
+	transition: 1.2s;
+}
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-80px);
+	}
+	55% {
+		transform: translateX(-1000px);
+	}
+	70% {
+		content: 'chtoto';
+	}
+}
+.block__inside:hover .rect {
+	animation: slide 2.5s 1;
+}
