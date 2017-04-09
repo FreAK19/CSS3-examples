@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.container {
+    max-width: 960px;
+    margin: 10px auto;
+}
+
+.galery {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.image__box {
+    width: 430px;
+    height: 283px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+.image__box img {
+    width: 100%;
+    transition: .7s;
+}
+
+.image__box_text {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,0,0,.5);
+    transition: .7s;
+}
+
+.describe__text {
+    opacity: 0;
+    transition: 1s 0.5s;
+}
+.describe {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0 30px 0 0 ;
+    position: absolute;
+    top: 30px;
+    left: 20%;
+}
+
+.image__box:hover .image__box_text {
+    left: 0%;
+}
+
+.image__box:hover .describe__text {
+    opacity: 1;
+}
+
+.image__box:hover img{
+    transform: scale(1.2);
+}
