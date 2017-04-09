@@ -1,0 +1,8 @@
+{
+  "name": "CSS3 examples",
+  "version": "1.0.0",
+  "description": "Simple examples of CSS3 ========== ### Library of CSS effect based on animation, transition and transformation",
+  "main": "gulpfile.js",
+  "author": "Andrew Kirichencko",
+  "license": "ISC"
+}
