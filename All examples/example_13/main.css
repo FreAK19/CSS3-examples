@@ -1,0 +1,50 @@
+ * {
+  box-sizing: border-box;
+}
+
+.container {
+    margin-top: 5%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    width: 30em;
+    height: 30em;
+    background: #2d2d2d;
+    color: #fff;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 20px 50px;
+  background-image: linear-gradient(45deg, #555 , #888);
+  border: 1px solid rgb(245, 231, 231);
+  box-shadow: 2px -2px 26px black;
+  transition: all .6s;
+}
+
+@keyframes bordered {
+  0% {
+    border: 1px dashed #fff;
+  }
+
+  100% {
+    border: 1px solid #fff;
+  }
+}
+.btn:hover {
+  animation: bordered 1s infinite;
+}
